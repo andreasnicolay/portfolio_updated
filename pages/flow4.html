@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 4</title>
+<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<a name="toppen"></a>
+<header>
+  
+<a href="../index.html"><img class="logo" src="../images/newlogoupdate.png" width="80px" height="80px" alt="Logo"/></a>
+  
+  <input id="nav" type="checkbox">
+  <label for="nav"></label>
+  
+  <nav>
+    <ul>
+      <li><a href="../index.html">Hjem</a></li>
+      <li><a class="current" href="#">Projekter</a></li>
+      <li><a href="skills.html">Lærring</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+    </ul>
+  </nav> 
+  
+</header>	
+	
+	<div class="dropdown">
+  <button class="dropbtn">Flow 4</button>
+  <div class="dropdown-content">
+    <a href="projekter.html">Flow 1</a>    
+	<a href="flow2.html">Flow 2</a>
+    <a href="flow3.html">Flow 3</a>
+	<a href="#">Portfolio</a>
+  </div>
+</div>
+	
+	<h1>Flow 4</h1>
+	<h2>Sweetbot</h2>
+	
+	<div class="linkdiv">
+	<a href="../files/flow4.pdf" target="_blank" class="link">Projektbeskrivelse</a>
+	<a href="../files/flow4rapport.pdf" target="_blank" class="link">Rapport</a>
+	<a href="https://andreasnicolay.dk/portfolio" target="_blank" class="link">Forrige hjemmeside</a>
+	<a href="https://xd.adobe.com/view/bbbd9d68-37f7-458d-4f6e-9d08ab931d33-cd8c/" target="_blank" class="link">Ny hjemmeside</a>
+</div>	
+	
+	<div class="linkdiv">
+	<a href="https://andreasnicolay.dk/portfolio" target="_blank" class="link">Forrige GitHub repository</a>
+	<a href="https://xd.adobe.com/view/bbbd9d68-37f7-458d-4f6e-9d08ab931d33-cd8c/" target="_blank" class="link">Ny GitHub repository</a>	
+</div>
+	
+<p>I dette flow blev vi stillet den opgave, at vi skulle designe og kode hjemmesiden for den fiktive virksomhed Sweetbot. Opgaven har vi lavet sammen i en gruppe af fire personer. Vi har i den forbindelse arbejdet med HTML, CSS, JavaScript og jQuery. Ydermere har vi udarbejdet ikoner og logo til hjemmesiden vha. Illustrator og Photoshop. Dette er også det første projekt, hvor vi har arbejdet med responsivt design, hvilket vil sige hjemmesiden er fungere til både mobil og web.</p>
+	
+<h2>Version 1.0</h2>
+	
+	<div class="slider">
+	<img class="websiteold" src="../images/flow4b/hotbot1.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow4b/hotbot2.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow4b/hotbot3.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow4b/hotbot4.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow4b/hotbot5.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow4b/hotbot6.png" alt="prototype"/>
+
+	
+	</div>
+	
+	<div class="billedenav">
+  <div class="nextprevknap">
+    <button class="prevknap" onclick="knap(-1)">❮ Forrige</button>
+    <button class="nextknap" onclick="knap(1)">Næste ❯</button>
+  </div>
+  	<button class="nextprev" onclick="klikside(1)">1</button> 
+  	<button class="nextprev" onclick="klikside(2)">2</button> 
+ 	<button class="nextprev" onclick="klikside(3)">3</button>
+	<button class="nextprev" onclick="klikside(4)">4</button>
+	<button class="nextprev" onclick="klikside(5)">5</button>	
+	<button class="nextprev" onclick="klikside(6)">6</button>
+		
+</div>
+	
+<p>Vi har valgt individuelt i gruppen selv at medføre de ændringer, som vi finder passende på siden til den forbedrede nye version. På forsiden har jeg valgt at udskifte billederne med de ikoner vi har arbejdet med. Dette er med henblik på at brugeren af hjemmesiden får den samme opfattelse af, hvilket produkt de kigger på uanset hvilken en af siderne de befinder sig på.</p>
+	
+<p>På flere af siderne har vi også haft problemer med vores overskrifter, som ikke alle har den samme skrifttykkelse. Derfor har jeg givet dem alle en fed "Lato" skrifttype, da det harmonerer bedre med paragrafferne. Udover det har jeg også rettet i sidens margin så alle overskrifter er centreret i midten på både mobil og web. Sidst har jeg ændret i paragraffernes længde på siden og gjort den mere læsevenlig, fremfor de lange sætninger vi før havde på enkelte sider.</p>
+	
+<p>Logoets placering har vi også misforstået lidt. På siden er det meningen, at det er Sweetbots logo der er fremtrædent og hvor HotBot forekommer i betalingensdelen af hjemmesiden. Dette har jeg selvfølgelig ændret, så det fremstår klart på alle sider. På kontaktsiden havde vi også lavet et mindre ikon, som illustrere support. Dette har jeg rettet placeringen på så den bliver i midten uanset websidens størrelse.</p>
+	
+<p>På betalingssiden hvor HotBots funktion forekommer har jeg indsat et Sweetbot logo øverst. Dette er for, at brugeren kan klikke på billedet for at komme tilbage til hjemmesiden. Før dette havde vi kun en anulleringsknap nederst. I vores brugertest og ved fremlæggelsen havde vi nogle der betvivlede funktionen af denne. Derfor er der nu to måder at vende tilbage til hjemmesiden på. Billedet sender en tilbage til forsiden, hvor anulleringsknappen sender en tilbage til indkøbskurven.</p>
+	
+	
+	<a href="#toppen"><button class="topknap">Til toppen &#8593;</button></a>
+	
+<footer>
+<small>Copyright &copy; 2018 Andreas Nicolay designs</small>
+</footer>
+	
+	<script>
+		
+/* Screenshot navigation */
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function knap(n) {
+  showDivs(slideIndex += n);
+}
+
+function klikside(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("websiteold");
+  var dots = document.getElementsByClassName("nextprev");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>	
+
+	
+</body>
+</html>

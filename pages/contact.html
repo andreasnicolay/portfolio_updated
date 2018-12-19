@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kontakt</title>
+<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<header>
+  
+<a href="../index.html"><img class="logo" src="../images/newlogoupdate.png" width="80px" height="80px" alt="Logo"/></a>
+  
+  <input id="nav" type="checkbox">
+  <label for="nav"></label>
+  
+  <nav>
+    <ul>
+      <li><a href="../index.html">Hjem</a></li>
+      <li><a href="projekter.html">Projekter</a></li>
+      <li><a href="skills.html">Lærring</a></li>
+      <li><a class="current" href="#">Kontakt</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+    </ul>
+  </nav> 
+  
+</header>	
+	
+	<h1>Kontakt mig</h1>
+	<div class="socialmedia">
+<a href="https://www.linkedin.com/in/andreas-nicolay-6233a96a/" target="_blank"><img onMouseOver="this.src='../images/contactimg/linkedinc.png';"
+		 onmouseout="this.src='../images/contactimg/linkedin.png';"
+		 src="../images/contactimg/linkedin.png" alt="hover effect" width="80px" height="80px"/></a>
+
+<a href="https://www.instagram.com/mjjumpshot/" target="_blank"><img onMouseOver="this.src='../images/contactimg/instagramc.png';"
+		 onmouseout="this.src='../images/contactimg/instagram.png';"
+		 src="../images/contactimg/instagram.png" alt="hover effect" width="80px" height="80px"/></a>
+
+<a href="https://www.facebook.com/andreas.nicolay.12" target="_blank"><img onMouseOver="this.src='../images/contactimg/facebookc.png';"
+		 onmouseout="this.src='../images/contactimg/facebook.png';"
+		 src="../images/contactimg/facebook.png" alt="hover effect" width="80px" height="80px"/></a>
+	</div>
+
+	<div class="kontaktformular">
+  <form action="mailto:andreas.nicolay@gmail.com" method="post" enctype="text/plain">
+
+    <label class="tekst" for="fornavn">Fornavn *</label>
+    <input type="text" id="fornavn" name="navn" placeholder="Dit fornavn...">
+
+    <label class="tekst" for="efternavn">Efternavn *</label>
+    <input type="text" id="efternavn" name="ordrenummer" placeholder="Dit efternavn...">
+
+    <label class="tekst" for="hjaelp">Hvad kan jeg hjælpe dig med?</label>
+    <select id="hjaelp" name="hjaelp">
+      <option value="website">Website</option>
+      <option value="logo">Logo</option>      
+	  <option value="logo">Ikon</option>
+      <option value="foto">Fotoredigering</option>
+	  <option value="video">Videoredigering</option>
+		<option value="andet">Andet</option>
+    </select>
+
+    <label class="tekst" for="besked">Besked *</label>
+    <textarea id="besked" name="besked" placeholder="Skriv din besked her..." style="height:200px"></textarea>
+	  
+	<label class="tekst" for="telefon">Telefonnummer</label>
+    <input type="text" id="telefon" name="telefon" placeholder="Skriv dit telefonnummer her...">
+	
+	<label class="tekst" for="email">E-mail *</label>
+    <input type="text" id="email" name="email" placeholder="Skriv din e-mail her...">
+    <input type="submit" value="Send besked">
+	<br>	
+	</form>
+</div>
+		
+	
+<footer>
+<small>Copyright &copy; 2018 Andreas Nicolay designs</small>
+</footer>
+	
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 3</title>
+<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<a name="toppen"></a>
+<header>
+  
+<a href="../index.html"><img class="logo" src="../images/newlogoupdate.png" width="80px" height="80px" alt="Logo"/></a>
+  
+  <input id="nav" type="checkbox">
+  <label for="nav"></label>
+  
+  <nav>
+    <ul>
+      <li><a href="../index.html">Hjem</a></li>
+      <li><a class="current" href="#">Projekter</a></li>
+      <li><a href="skills.html">Lærring</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="ommig.html">Om mig</a></li>
+    </ul>
+  </nav> 
+  
+</header>	
+	
+	<div class="dropdown">
+  <button class="dropbtn">Flow 3</button>
+  <div class="dropdown-content">
+    <a href="projekter.html">Flow 1</a>
+    <a href="flow2.html">Flow 2</a>
+	<a href="flow4.html">Flow 4</a>
+	<a href="#">Portfolio</a>
+  </div>
+</div>
+	
+	<h1>Flow 3</h1>
+	<h2>Byg en app</h2>
+	
+<div class="linkdiv">
+	<a href="../files/flow3.pdf" target="_blank" class="link">Projektbeskrivelse</a>
+	<a href="../files/flow3rapport.pdf" target="_blank" class="link">Rapport</a>
+	<a href="https://xd.adobe.com/view/bbbd9d68-37f7-458d-4f6e-9d08ab931d33-cd8c/" target="_blank" class="link">Forrige version</a>
+	<a href="https://xd.adobe.com/view/f8824dea-18ae-4299-663e-a0a3914ad003-8eb3/" target="_blank" class="link">Nye version</a>
+</div>
+	
+<p>I dette flow blev vi stillet den opgave, at vi skulle bygge en app i Adobe XD. Efterhånden har vi arbejdet en del med dette program og man begyndte på dette tidspunkt at have godt overblik over dets funktioner. Min ide var en sportsapp, hvor målgruppen er folk der spiller basketball samt trænere til sporten. Til appen har jeg designet 9 ikoner i Adobe Illustrator, som hver især illustrere en tilgang i menuen.</p>
+	
+	<h2>Version 1.0</h2>
+	
+	<div class="slider">
+	<img class="prototypeold" src="../images/flow3b/app1.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app2.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app3.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app4.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app5.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app6.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app7.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app8.png" alt="prototype"/>	
+	<img class="prototypeold" src="../images/flow3b/app9.png" alt="prototype"/>
+	<img class="prototypeold" src="../images/flow3b/app10.png" alt="prototype"/>
+	<img class="prototypeold" src="../images/flow3b/app11.png" alt="prototype"/>
+	<img class="prototypeold" src="../images/flow3b/app12.png" alt="prototype"/>
+
+	
+	</div>
+	
+	<div class="billedenav">
+  <div class="nextprevknap">
+    <button class="prevknap" onclick="knap(-1)">❮ Forrige</button>
+    <button class="nextknap" onclick="knap(1)">Næste ❯</button>
+  </div>
+  	<button class="nextprev" onclick="klikside(1)">1</button> 
+  	<button class="nextprev" onclick="klikside(2)">2</button> 
+ 	<button class="nextprev" onclick="klikside(3)">3</button>
+	<button class="nextprev" onclick="klikside(4)">4</button>
+	<button class="nextprev" onclick="klikside(5)">5</button>
+	<button class="nextprev" onclick="klikside(6)">6</button>
+	<button class="nextprev" onclick="klikside(7)">7</button>
+	<button class="nextprev" onclick="klikside(8)">8</button>
+	<button class="nextprev" onclick="klikside(9)">9</button>
+	<button class="nextprev" onclick="klikside(10)">10</button>
+	<button class="nextprev" onclick="klikside(11)">11</button>
+	<button class="nextprev" onclick="klikside(12)">12</button>
+		
+</div>
+	
+<p>Efter flere brugertests og en fremlæggelse af appen har jeg fundet frem til nogle forbedringer som også kan ses herunder. Dette indebærer en lysere farve til appen, hvor jeg før havde en nuance af sort, som nu er blevet hvid. Udover dette virkede indholdet på de forskellige sider for sammenpresset, da det grid jeg havde lavet tilføjede en kant i venstre og højre side. Derfor har jeg sørget for at indholdet på siden går helt ud til kanterne, så indholdet fyldestgøre den enkelte side.</p>
+	
+<p>Appen jeg har lavet ovenfor er lavet ud fra en iPhone X, hvor jeg også lavede en version til tablet. Denne har derfor andre funktioner på nogle af siderne, men funktioner der giver mening da man for det meste vil kigge på sine statistikker der, da det i dette tilfælde vil være de færreste der træner med deres iPad. Denne version kan ses herunder:</p>
+
+<div class="linkdiv">
+<a class="link" href="#">iPad version</a>
+</div>	
+	
+	<h2>Version 2.0</h2>
+
+	
+	<a href="#toppen"><button class="topknap">Til toppen &#8593;</button></a>
+	
+<footer>
+<small>Copyright &copy; 2018 Andreas Nicolay designs</small>
+</footer>
+	
+	<script>
+		
+/* Screenshot navigation */
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function knap(n) {
+  showDivs(slideIndex += n);
+}
+
+function klikside(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("prototypeold");
+  var dots = document.getElementsByClassName("nextprev");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	
+	
+</body>
+</html>

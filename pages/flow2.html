@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Flow 2</title>
+<link href="../styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<a name="toppen"></a>	
+<header>
+  
+<a href="../index.html"><img class="logo" src="../images/newlogoupdate.png" width="80px" height="80px" alt="Logo"/></a>
+  
+  <input id="nav" type="checkbox">
+  <label for="nav"></label>
+  
+  <nav>
+    <ul>
+      <li><a href="../index.html">Hjem</a></li>
+      <li><a class="current" href="#">Projekter</a></li>
+      <li><a href="skills.html">Lærring</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+      <li><a href="ommig.html">Om mig</a></li>
+    </ul>
+  </nav> 
+  
+</header>	
+	
+	<div class="dropdown">
+  <button class="dropbtn">Flow 2</button>
+  <div class="dropdown-content">
+    <a href="projekter.html">Flow 1</a>
+    <a href="flow3.html">Flow 3</a>
+	<a href="flow4.html">Flow 4</a>
+	<a href="#">Portfolio</a>
+  </div>
+</div>
+	
+	<h1>Flow 2</h1>
+	<h2>Byg din portfolio</h2>
+	
+	<div class="linkdiv">
+	<a href="../files/flow2.pdf" target="_blank" class="link">Projektbeskrivelse</a>
+	<a href="https://andreasnicolay.dk/portfolio" target="_blank" class="link">Oprindelig hjemmeside</a>
+	<a href="https://github.com/andreasnicolay/portfolio" target="_blank" class="link">GitHub repository</a>
+</div>
+	
+	<p>I dette flow blev vi stillet den opgave, at vi skulle bygge vores portfolio fra bunden vha. HTML og CSS. Dette er derfor mit første forsøg med grundkodning. Efterhånden har vi lært en masse om HTML og CSS grundstruktur, hvilket har dannet et godt fundament for denne portfolio. Vi har også været igennem JavaScript og jQuery, som jeg ikke havde noget af i den første portfolio.</p>
+	
+<h2>Version 1.0</h2>
+	
+	<div class="slider">
+	<img class="websiteold" src="../images/flow2b/byg1.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow2b/byg2.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow2b/byg3.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow2b/byg4.png" alt="prototype"/>	
+	<img class="websiteold" src="../images/flow2b/byg5.png" alt="prototype"/>
+	</div>
+	
+	<div class="billedenav">
+  <div class="nextprevknap">
+    <button class="prevknap" onclick="knap(-1)">❮ Forrige</button>
+    <button class="nextknap" onclick="knap(1)">Næste ❯</button>
+  </div>
+  	<button class="nextprev" onclick="klikside(1)">1</button> 
+  	<button class="nextprev" onclick="klikside(2)">2</button> 
+ 	<button class="nextprev" onclick="klikside(3)">3</button>
+	<button class="nextprev" onclick="klikside(4)">4</button>
+	<button class="nextprev" onclick="klikside(5)">5</button>
+		
+</div>
+	
+<p>I forhold til mit første portfolio har jeg fået tilføjet og rettet en del. Som det første har jeg ændret forsiden, som før var et billede af Grand Canyon, som jeg selv havde taget. I virkeligheden fortæller det ikke meget om mig som person, hvilket også er derfor jeg har udskiftet det med et billede af mig selv med noget grafisk design indover.</p>
+
+<p>I forhold til designprocessen af mit forsidebillede og resten af min nuværende portfolio kan man læse mere om dette i Flow 5 "Portfolio"</p>
+
+<div class="linkdiv">
+<a class="link" href="flow5.html">Læs mere</a>
+</div>	
+	
+<p>Siden med mine projekter har også fået sig en del ændringer, da jeg på min oprindelige hjemmeside havde billeder og projekter blandet sammen. Dette har jeg organiseret i denne portfolio ved at inddele mine projekter i flows. Det er både med henblik på, at gøre det mere overskueligt men samtidigt for, at brugeren af hjemmesiden kan navigere mellem billederne og fokusere på et enkelt billede ad gangen.</p>
+
+<p>Kontaktsiden er også noget jeg har genovervejet, da der er for mange kontaktmuligheder på min oprindelige. På mit nye portfolio har jeg tilføjet de sociale medier LinkedIn, Instagram og Facebook. Udover det har jeg gjort min kontaktformular smallere.</p>
+	
+<h2>Version 2.0</h2>
+	
+<p>Denne hjemmeside du befinder dig på nu er den nyeste portfolio tilgængelig. Design- og arbejdsprocessen kan du læse mere om i Flow 5 "Portfolio"</p>
+<div class="linkdiv">
+<a class="link" href="flow5.html">Læs mere</a>
+</div>	
+	
+	<a href="#toppen"><button class="topknap">Til toppen &#8593;</button></a>
+	
+<footer>
+<small>Copyright &copy; 2018 Andreas Nicolay designs</small>
+</footer>
+	
+	
+	<script>
+		
+/* Screenshot navigation */
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function knap(n) {
+  showDivs(slideIndex += n);
+}
+
+function klikside(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("websiteold");
+  var dots = document.getElementsByClassName("nextprev");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+	
+</body>
+</html>

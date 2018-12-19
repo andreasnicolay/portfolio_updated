@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Gælder på alle sider */
+body{
+	margin: 0;
+	font-family: 'roboto', sans-serif;
+}
+
+h1{
+	margin-top: 30px;
+}
+
+h1, h2{
+	text-align: center;
+}
+p{
+	text-align: left;
+	font-size: 16px;
+	width: 55%;
+	margin-left: 23%;
+	margin-right: 18%;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 700px){
+	p{
+		margin: 5%;
+		width: 90%;
+	}
+}
+
+.topknap{
+	background-color: black;
+	color: white;
+	font-size: 16px;
+}
+.topknap:hover{
+	background-color: grey;
+	color: white;
+}
+
+/* Styling af navigationsbaren */
+.picture{
+	margin: 5px;
+	padding: 5px;
+	border: none;
+}
+
+header {
+  overflow: hidden;
+  background: black;
+}
+
+header a, header label {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  line-height: 10px;
+  font-size: 18px;
+}
+.current{
+	color: grey;
+}
+
+header a:hover, header label:hover { color: grey; }
+
+header{
+ padding-top: 0;
+ padding-bottom: 15px;
+}
+
+header label {
+  float: right;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+/* Burger menu */
+header label:after {
+  content: '\2261';
+  font-size: 60px;
+}
+
+.logo {
+  float: left;
+}
+  
+nav {
+  float: right;
+  max-height: 0;
+  width: 100%;
+
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+  
+nav li {
+  display: block;
+  text-align: center;
+}
+  
+nav a {
+  padding: 20px;
+  width: 100%;
+}
+
+#nav { display: none; }
+
+#nav:checked ~ nav {
+  max-height: 300px;
+}
+
+@media only screen and (min-width: 700px) {
+  
+  header label { display: none; }
+  
+  nav {
+    width: auto;
+    max-height: none;
+  }
+  
+  nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  header nav a {
+    display: inline-block;
+    padding: 10px 20px 30px 0;
+    width: auto;
+  }
+  
+}
+
+/* Forsiden */
+
+.portrait{
+	max-height: 100%;
+    height: auto;
+    max-width: 400px;
+    display: table;
+    margin: 0 auto;
+}
+
+
+/* Projekter */
+
+.linkdiv{
+	text-align: center;
+	padding: 20px;
+}
+
+.link{
+	padding: 20px;
+	color: black;
+	margin: 20px;
+}
+
+.link:hover{
+	color: grey;
+}
+
+button{
+	font-size: 25px;
+	padding: 6px 20px;
+	color: black;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px;
+	border-color: grey;
+}
+button:hover{
+	color: white;
+	background-color: black;
+}
+
+.nextprevknap{
+	height: auto;
+    display: table;
+    margin: 0 auto;
+	text-decoration: none;
+}
+.billedenav{
+    height: auto;
+    display: table;
+    margin: 0 auto;
+}
+
+.dropbtn {
+    background-color: Black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+	margin-top: 150px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.prototypeold{
+	max-height: 100%;
+    height: auto;
+    max-width: 350px;
+    display: table;
+    margin: 0 auto;
+}
+.websiteold{
+	max-height: 100%;
+    height: auto;
+    max-width: 1000px;
+    display: table;
+    margin: 0 auto;
+}
+
+/* Gør billedet mindre i mobiltilstand */
+@media screen and (max-width: 700px){
+.websiteold {
+	max-height: 100%;
+    height: auto;
+    max-width: 350px;
+    display: table;
+    margin: 0 auto;
+	}
+}
+
+/* Sociale medier i kontakt */
+
+.socialmedia{
+    display: table;
+    margin: 0 auto;
+	padding: 5px;
+}
+
+/* Kontaktformular */
+
+.tekst{
+	color: #2A1000;
+}
+
+.margintop{
+	margin-top: 10px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #2A1000; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
+
+/* Send besked knap */
+
+input[type=submit] {
+    background-color: grey;
+    color: #FFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+}
+
+.kontaktformular{
+	background-color: #f8f8f8;
+	padding: 5px;
+}
+
+/* Padding omkring formularen */
+@media screen and (min-width: 700px){
+.kontaktformular{
+    border-radius: 5px;
+	padding: 5%;
+	background-color: #f8f8f8;
+	width: 40%;
+	margin: 0 auto 0 auto;
+    height: auto;
+    max-width: 400px;
+    display: table;
+    }
+}
+
+/* Footer */
+
+footer{
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+	padding: 15px;
+	font-size: 18px;
+	margin-top: 20px;
+	position: relative;
+}

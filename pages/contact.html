@@ -19,7 +19,9 @@
     <ul>
       <li><a href="../index.html">Hjem</a></li>
       <li><a href="projekter.html">Projekter</a></li>
-      <li><a href="skills.html">Lærring</a></li>
+
+
+      <li><a href="skills.html">Læring</a></li>
       <li><a class="current" href="#">Kontakt</a></li>
             <li><a href="ommig.html">Om mig</a></li>
     </ul>
@@ -46,10 +48,10 @@
   <form action="mailto:andreas.nicolay@gmail.com" method="post" enctype="text/plain">
 
     <label class="tekst" for="fornavn">Fornavn *</label>
-    <input type="text" id="fornavn" name="navn" placeholder="Dit fornavn...">
+    <input type="text" id="fornavn" name="navn" placeholder="Dit fornavn..." required>
 
     <label class="tekst" for="efternavn">Efternavn *</label>
-    <input type="text" id="efternavn" name="ordrenummer" placeholder="Dit efternavn...">
+    <input type="text" id="efternavn" name="efternavn" placeholder="Dit efternavn..." required>
 
     <label class="tekst" for="hjaelp">Hvad kan jeg hjælpe dig med?</label>
     <select id="hjaelp" name="hjaelp">
@@ -62,13 +64,13 @@
     </select>
 
     <label class="tekst" for="besked">Besked *</label>
-    <textarea id="besked" name="besked" placeholder="Skriv din besked her..." style="height:200px"></textarea>
+    <textarea id="besked" name="besked" placeholder="Skriv din besked her..." required style="height:200px"></textarea>
 	  
 	<label class="tekst" for="telefon">Telefonnummer</label>
     <input type="text" id="telefon" name="telefon" placeholder="Skriv dit telefonnummer her...">
 	
 	<label class="tekst" for="email">E-mail *</label>
-    <input type="text" id="email" name="email" placeholder="Skriv din e-mail her...">
+    <input type="text" id="email" name="email" placeholder="Skriv din e-mail her..." required>
     <input type="submit" value="Send besked">
 	<br>	
 	</form>

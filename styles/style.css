@@ -6,21 +6,26 @@
 body{
 	margin: 0;
 	font-family: 'roboto', sans-serif;
+	
 }
 
 h1{
 	margin-top: 30px;
 }
+h2, h3{
+	margin-top: 75px;
+	margin-bottom: 50px;
+}
 
-h1, h2{
+h1, h2, h3{
 	text-align: center;
 }
 p{
 	text-align: left;
 	font-size: 16px;
-	width: 55%;
-	margin-left: 23%;
-	margin-right: 18%;
+	width: 45%;
+	margin-left: 27%;
+	margin-right: 20%;
 	margin-top: 20px;
 }
 @media only screen and (max-width: 700px){
@@ -31,13 +36,13 @@ p{
 }
 
 .topknap{
-	background-color: black;
-	color: white;
+	background-color: transparent;
+	color: #000;
 	font-size: 16px;
 }
 .topknap:hover{
-	background-color: grey;
-	color: white;
+	background-color: #808080;
+	color: #FFFFFF;
 }
 
 /* Styling af navigationsbaren */
@@ -49,22 +54,22 @@ p{
 
 header {
   overflow: hidden;
-  background: black;
+  background: #000;
 }
 
 header a, header label {
   display: block;
   padding: 20px;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   line-height: 10px;
   font-size: 18px;
 }
 .current{
-	color: grey;
+	color: #808080;
 }
 
-header a:hover, header label:hover { color: grey; }
+header a:hover, header label:hover { color: #808080; }
 
 header{
  padding-top: 0;
@@ -142,6 +147,7 @@ nav a {
   
 }
 
+
 /* Forsiden */
 
 .portrait{
@@ -152,6 +158,26 @@ nav a {
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 700px) {
+#frontpagetext{
+	float: left;
+	text-align: right;
+	margin-left: 13%;
+	margin-top: 200px;
+	}
+	.frontpagetext{
+		text-align: left;
+	}
+.portrait{
+	max-height: 100%;
+    height: auto;
+    max-width: 400px;
+	margin-left: 55%;
+	margin-top: 60px;
+}
+}
+
+
 
 /* Projekter */
 
@@ -160,28 +186,58 @@ nav a {
 	padding: 20px;
 }
 
+.mobilelink{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #000;
+}
+.mobilelink:hover{
+	color: #808080;
+}
+
+@media only screen and (min-width: 700px){
+	.mobilelink{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.link{
+		display: none;
+	}
+}
+
 .link{
 	padding: 20px;
-	color: black;
+	color: #000;
+	margin: 20px;
+}
+.mere{
+	padding: 20px;
+	color: #000;
 	margin: 20px;
 }
 
+.mere:hover{
+	color: #808080;
+}
+
 .link:hover{
-	color: grey;
+	color: #808080;
 }
 
 button{
 	font-size: 25px;
 	padding: 6px 20px;
-	color: black;
-	background-color: white;
-	border-radius: 5px;
+	color: #000;
+	background-color: #FFFFFF;
+	border-radius: 30px;
 	margin: 5px;
-	border-color: grey;
+	border-color: #808080;
 }
 button:hover{
-	color: white;
-	background-color: black;
+	color: #FFFFFF;
+	background-color: #000;
 }
 
 .nextprevknap{
@@ -197,12 +253,13 @@ button:hover{
 }
 
 .dropbtn {
-    background-color: Black;
-    color: white;
+    background-color: #000;
+    color: #FFFFFF;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+	border-radius: 5px;
 }
 
 .dropdown {
@@ -214,27 +271,27 @@ button:hover{
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #FFFFFF;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #000;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: grey}
+.dropdown-content a:hover {background-color: #808080}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: grey;
+    background-color: #808080;
 }
 
 .prototypeold{
@@ -251,6 +308,10 @@ button:hover{
     display: table;
     margin: 0 auto;
 }
+
+/* Dropdown menu */
+
+
 
 /* Gør billedet mindre i mobiltilstand */
 @media screen and (max-width: 700px){
@@ -269,6 +330,7 @@ button:hover{
     display: table;
     margin: 0 auto;
 	padding: 5px;
+	margin-top: 50px;
 }
 
 /* Kontaktformular */
@@ -295,7 +357,7 @@ input[type=text], select, textarea {
 /* Send besked knap */
 
 input[type=submit] {
-    background-color: grey;
+    background-color: #808080;
     color: #FFF;
     padding: 12px 20px;
     border: none;
@@ -304,7 +366,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: black;
+    background-color: #000;
 }
 
 .kontaktformular{
@@ -326,13 +388,52 @@ input[type=submit]:hover {
     }
 }
 
+/* Læring */
+
+.skills{
+	display: table;
+    margin: 0 auto;
+}
+.skillslink{
+	color: #000;
+}
+.skillslink a{
+	color: #808080;
+}
+
+.resize{
+	display: table;
+    margin: 0 auto;
+}
+.kommunikation{
+	display: table;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px){
+	.resize{
+		width: 50%;
+	}
+	.kommunikation{
+		width: 90%;
+	}
+}
+
+
+/* Om mig */
+
+.ommigtekst{
+	margin-top: 75px;
+}
+
+
+
 /* Footer */
 
 footer{
     left: 0;
     bottom: 0;
-    background-color: black;
-    color: white;
+    background-color: #000;
+    color: #FFFFFF;
     text-align: center;
 	padding: 15px;
 	font-size: 18px;
